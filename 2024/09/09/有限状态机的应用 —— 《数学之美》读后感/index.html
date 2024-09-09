@@ -1,0 +1,187 @@
+<!DOCTYPE html><html lang="zh" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>demo | demo</title><meta name="author" content="hamu"><meta name="copyright" content="hamu"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="在《数学之美》的第12章中，作者提到了对地址进行识别和分析的最有效方法：有限状态机  有限状态机是一个特殊的有向图, 它包括一些状态（节点）和连接这些状态的有向弧。图12.1所示的是一 个识别中国地址的有限状态机的简单例子![[Screenshot_20240909_124808.jpg]]每一个有限状态机都有一个开始状态和一个终止状态，以及若干中间状 态。每一条弧上带有从一个状态进入下一个状态的">
+<meta property="og:type" content="article">
+<meta property="og:title" content="demo">
+<meta property="og:url" content="http://example.com/2024/09/09/%E6%9C%89%E9%99%90%E7%8A%B6%E6%80%81%E6%9C%BA%E7%9A%84%E5%BA%94%E7%94%A8%20%E2%80%94%E2%80%94%20%E3%80%8A%E6%95%B0%E5%AD%A6%E4%B9%8B%E7%BE%8E%E3%80%8B%E8%AF%BB%E5%90%8E%E6%84%9F/index.html">
+<meta property="og:site_name" content="demo">
+<meta property="og:description" content="在《数学之美》的第12章中，作者提到了对地址进行识别和分析的最有效方法：有限状态机  有限状态机是一个特殊的有向图, 它包括一些状态（节点）和连接这些状态的有向弧。图12.1所示的是一 个识别中国地址的有限状态机的简单例子![[Screenshot_20240909_124808.jpg]]每一个有限状态机都有一个开始状态和一个终止状态，以及若干中间状 态。每一条弧上带有从一个状态进入下一个状态的">
+<meta property="og:locale">
+<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
+<meta property="article:published_time" content="2024-09-09T08:44:22.805Z">
+<meta property="article:modified_time" content="2024-09-09T08:44:22.805Z">
+<meta property="article:author" content="hamu">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2024/09/09/%E6%9C%89%E9%99%90%E7%8A%B6%E6%80%81%E6%9C%BA%E7%9A%84%E5%BA%94%E7%94%A8%20%E2%80%94%E2%80%94%20%E3%80%8A%E6%95%B0%E5%AD%A6%E4%B9%8B%E7%BE%8E%E3%80%8B%E8%AF%BB%E5%90%8E%E6%84%9F/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy Successful',
+    error: 'Copy Error',
+    noSupport: 'Browser Not Supported'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just now',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.1/dist/infinitegrid.min.js',
+    buttonText: 'Load More'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'demo',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-09-09 08:44:22'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">5</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><hr class="custom-hr"/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="demo"><span class="site-name">demo</span></a></span><div id="menus"><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Untitled</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2024-09-09T08:44:22.805Z" title="Created 2024-09-09 08:44:22">2024-09-09</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2024-09-09T08:44:22.805Z" title="Updated 2024-09-09 08:44:22">2024-09-09</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post Views:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>在《数学之美》的第12章中，作者提到了对地址进行识别和分析的最有效方法：有限状态机</p>
+<blockquote>
+<p>有限状态机是一个特殊的有向图, 它包括一些状态（节点）和连接这些状态的有向弧。图12.1所示的是一 个识别中国地址的有限状态机的简单例子<br>![[Screenshot_20240909_124808.jpg]]<br>每一个有限状态机都有一个开始状态和一个终止状态，以及若干中间状 态。每一条弧上带有从一个状态进入下一个状态的条件。比如，在上图 中，当前的状态是“省”，如果遇到一个词组和（区）县名有关，就进 入状态“区县”；如果遇到的下一个词组和城市有关，那么就进入“市”的状态，如此等等。如果一条地址能从状态机的开始状态经过状态机的若干中间状态，走到终止状态，则这条地址有效，否则无效。比如，“北京市双清路83 号”对于上面的有限状态来讲有效，而“上海市辽宁省马家主”则无效（因为无法从“市”走回到“省”)</p>
+</blockquote>
+<p>地址分析中的有限状态机（FSM）技术与游戏开发中的有限状态机技术在原理上具有共通性，尽管应用场景和具体实现有所不同。以下是它们之间的联系：</p>
+<p>![[capture-2024-09-09-13-23-28_edit_275705026328674.jpg]]</p>
+<h3 id="1-状态转换的结构性"><a href="#1-状态转换的结构性" class="headerlink" title="1. 状态转换的结构性"></a>1. <strong>状态转换的结构性</strong></h3><ul>
+<li><strong>地址分析</strong>：地址分析涉及对用户输入的地址信息进行解析和结构化。例如，将一个复杂的地址分解为街道、城市、邮编等不同的组成部分。在这个过程中，FSM可以用来表示不同的解析状态。例如，FSM可以从“初始状态”进入“识别街道名”的状态，接着转换到“识别城市”的状态，最后进入“地址解析完成”的状态。</li>
+<li><strong>游戏开发</strong>：在游戏中，FSM用于控制角色的状态转换，比如从“闲置”到“行走”，再到“攻击”。每一个状态代表角色的某一行为，状态之间的转换基于玩家的输入或游戏中的事件。</li>
+</ul>
+<p><strong>联系</strong>：两者都依赖于状态之间的有序转换。地址分析中，FSM帮助系统解析不同的地址元素，而游戏开发中，FSM控制角色或系统的行为流转。</p>
+<h3 id="2-输入驱动的状态转移"><a href="#2-输入驱动的状态转移" class="headerlink" title="2. 输入驱动的状态转移"></a>2. <strong>输入驱动的状态转移</strong></h3><ul>
+<li><strong>地址分析</strong>：在地址解析中，不同的字符或标记会触发状态机的状态转换。例如，解析到一个逗号可能表示从街道部分转向城市部分的状态转换。</li>
+<li><strong>游戏开发</strong>：游戏中角色或对象的状态转换则由玩家输入、游戏事件或其他因素触发。</li>
+</ul>
+<p><strong>联系</strong>：两者的状态转换都是通过输入或外部事件驱动的。在地址分析中是通过解析到的字符或地名，在游戏开发中则是通过玩家操作或游戏事件。</p>
+<h3 id="3-多步过程的管理"><a href="#3-多步过程的管理" class="headerlink" title="3. 多步过程的管理"></a>3. <strong>多步过程的管理</strong></h3><ul>
+<li><strong>地址分析</strong>：地址解析是一个多步过程，每个步骤（状态）都负责解析地址的某个组成部分。FSM可以帮助逐步推进解析流程。例如，系统可以先识别国家，再识别州、城市，最后解析街道和邮政编码。</li>
+<li><strong>游戏开发</strong>：游戏中的FSM用于管理多步骤的动作或行为，比如角色从侦查到攻击、从闲置到警戒等。这些步骤可以被设计为有序的状态，逐步推进角色的行为。</li>
+</ul>
+<p><strong>联系</strong>：FSM在两者中都用于管理复杂流程，确保每个步骤按照预定的逻辑顺序执行。</p>
+<h3 id="4-错误处理与状态回滚"><a href="#4-错误处理与状态回滚" class="headerlink" title="4. 错误处理与状态回滚"></a>4. <strong>错误处理与状态回滚</strong></h3><ul>
+<li><strong>地址分析</strong>：在地址解析中，FSM可以用于处理错误输入或无效地址。如果解析过程中遇到无法识别的部分，FSM可以回到某个之前的状态，或进入错误处理状态。</li>
+<li><strong>游戏开发</strong>：在游戏中，FSM也用于处理异常情况。例如，当角色的某个动作失败（如攻击被阻挡），状态机可以回滚到之前的状态，或进入“失败”状态，从而执行相应的错误处理逻辑。</li>
+</ul>
+<p><strong>联系</strong>：两者都利用FSM的状态回退和错误处理机制，确保系统能够处理异常情况。</p>
+<h3 id="5-并行状态与复杂逻辑处理"><a href="#5-并行状态与复杂逻辑处理" class="headerlink" title="5. 并行状态与复杂逻辑处理"></a>5. <strong>并行状态与复杂逻辑处理</strong></h3><ul>
+<li><strong>地址分析</strong>：在复杂的地址解析中，可能会有并行的状态，例如同时解析街道名和建筑物名称。FSM可以用于管理这种复杂的解析逻辑。</li>
+<li><strong>游戏开发</strong>：游戏中的复杂角色行为也可能涉及并行状态。例如，角色在行走时可以同时进行攻击或防御操作。FSM可以管理这些并行状态，确保逻辑不冲突。</li>
+</ul>
+<p><strong>联系</strong>：FSM在处理复杂逻辑时能够支持并行状态，使系统在多任务场景下仍能保持逻辑清晰。</p>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>尽管地址分析和游戏开发的具体应用领域不同，但两者中的有限状态机技术都基于相同的状态管理和状态转移原理。FSM通过有序管理状态、处理输入驱动的事件、处理错误和管理复杂逻辑，在这两个领域发挥了重要作用。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>Author: </span><span class="post-copyright-info"><a href="http://example.com">hamu</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>Link: </span><span class="post-copyright-info"><a href="http://example.com/2024/09/09/%E6%9C%89%E9%99%90%E7%8A%B6%E6%80%81%E6%9C%BA%E7%9A%84%E5%BA%94%E7%94%A8%20%E2%80%94%E2%80%94%20%E3%80%8A%E6%95%B0%E5%AD%A6%E4%B9%8B%E7%BE%8E%E3%80%8B%E8%AF%BB%E5%90%8E%E6%84%9F/">http://example.com/2024/09/09/%E6%9C%89%E9%99%90%E7%8A%B6%E6%80%81%E6%9C%BA%E7%9A%84%E5%BA%94%E7%94%A8%20%E2%80%94%E2%80%94%20%E3%80%8A%E6%95%B0%E5%AD%A6%E4%B9%8B%E7%BE%8E%E3%80%8B%E8%AF%BB%E5%90%8E%E6%84%9F/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2024/09/09/text3/" title="Hello World"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">Previous</div><div class="prev_info">Hello World</div></div></a></div><div class="next-post pull-right"><a href="/2024/09/05/text1/" title="text1"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">Next</div><div class="next_info">text1</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">hamu</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">5</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Contents</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E7%8A%B6%E6%80%81%E8%BD%AC%E6%8D%A2%E7%9A%84%E7%BB%93%E6%9E%84%E6%80%A7"><span class="toc-number">1.</span> <span class="toc-text">1. 状态转换的结构性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E8%BE%93%E5%85%A5%E9%A9%B1%E5%8A%A8%E7%9A%84%E7%8A%B6%E6%80%81%E8%BD%AC%E7%A7%BB"><span class="toc-number">2.</span> <span class="toc-text">2. 输入驱动的状态转移</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E5%A4%9A%E6%AD%A5%E8%BF%87%E7%A8%8B%E7%9A%84%E7%AE%A1%E7%90%86"><span class="toc-number">3.</span> <span class="toc-text">3. 多步过程的管理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E9%94%99%E8%AF%AF%E5%A4%84%E7%90%86%E4%B8%8E%E7%8A%B6%E6%80%81%E5%9B%9E%E6%BB%9A"><span class="toc-number">4.</span> <span class="toc-text">4. 错误处理与状态回滚</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-%E5%B9%B6%E8%A1%8C%E7%8A%B6%E6%80%81%E4%B8%8E%E5%A4%8D%E6%9D%82%E9%80%BB%E8%BE%91%E5%A4%84%E7%90%86"><span class="toc-number">5.</span> <span class="toc-text">5. 并行状态与复杂逻辑处理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-number">6.</span> <span class="toc-text">总结</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/09/09/hello-world/" title="Hello World">Hello World</a><time datetime="2024-09-09T08:44:22.805Z" title="Created 2024-09-09 08:44:22">2024-09-09</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/09/09/text2/" title="Hello World">Hello World</a><time datetime="2024-09-09T08:44:22.805Z" title="Created 2024-09-09 08:44:22">2024-09-09</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/09/09/text3/" title="Hello World">Hello World</a><time datetime="2024-09-09T08:44:22.805Z" title="Created 2024-09-09 08:44:22">2024-09-09</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/09/09/%E6%9C%89%E9%99%90%E7%8A%B6%E6%80%81%E6%9C%BA%E7%9A%84%E5%BA%94%E7%94%A8%20%E2%80%94%E2%80%94%20%E3%80%8A%E6%95%B0%E5%AD%A6%E4%B9%8B%E7%BE%8E%E3%80%8B%E8%AF%BB%E5%90%8E%E6%84%9F/" title="Untitled">Untitled</a><time datetime="2024-09-09T08:44:22.805Z" title="Created 2024-09-09 08:44:22">2024-09-09</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/09/05/text1/" title="text1">text1</a><time datetime="2024-09-05T19:13:04.000Z" title="Created 2024-09-05 19:13:04">2024-09-05</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By hamu</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Toggle Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between Single-column and Double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
